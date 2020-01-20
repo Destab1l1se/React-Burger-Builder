@@ -19,5 +19,5 @@ const modal = ({show, closeModal, children}) => (
 );
 
 export default React.memo(modal, (oldProps, newProps) => {
-    return oldProps.show === newProps.show;
+    return oldProps.show === newProps.show && oldProps.children === newProps.children;
 });
